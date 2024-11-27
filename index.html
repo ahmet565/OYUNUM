@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyunlu Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz! Eğlenceli Oyun Başlıyor!</h1>
+    </header>
+
+    <main>
+        <section class="game-instructions">
+            <h2>Oyun Talimatları</h2>
+            <p>Bu basit oyunda, butona tıklayarak skorunuzu artırabilirsiniz. Ne kadar hızlı tıklarsanız, o kadar çok puan kazanırsınız!</p>
+        </section>
+
+        <section class="game-container">
+            <h2>Skor: <span id="score">0</span></h2>
+            <h3>Zaman: <span id="timer">30</span> saniye</h3>
+            <!-- Oyun başlatma butonu -->
+            <button id="startButton" onclick="startGame()">Oyunu Başlat</button>
+
+            <!-- Oyun butonu (Başladıktan sonra etkinleştirilecek) -->
+            <button id="gameButton" onclick="increaseScore()" disabled>Oyun Başladı - Tıklayın!</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web tasarımı ve oyun, © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
